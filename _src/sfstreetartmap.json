@@ -1,0 +1,16 @@
+---
+layout: nil
+---
+
+[
+  {% for place in site.places %}
+  {
+    "placeid": "{{ place.placeid }}",
+    "url": "{{ place.url }}",
+    "lat": "{{ place.lat }}",
+    "long": "{{ place.long }}",
+    "date": "{{ place.date }}",
+    "comments": "{{ place.content | escape }}"
+  } {% if forloop.last %}{% else %},{% endif %}
+  {% endfor %}
+]

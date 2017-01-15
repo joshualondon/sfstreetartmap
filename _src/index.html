@@ -1,0 +1,9 @@
+---
+layout: base
+---
+
+<h1>Index</h1>
+
+{% for place in site.places %}
+<li><a href="{{ site.baseurl | append: place.url }}">{{ place.title }}</a></li>
+{% endfor %}

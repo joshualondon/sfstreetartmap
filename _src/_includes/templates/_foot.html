@@ -1,0 +1,10 @@
+
+	<!-- <script src="{{ site.url }}/assets/js/vendor/jquery-3.1.1.slim.min.js"></script>
+	<script src="{{ site.url }}/assets/js/london.min.js"></script> -->
+
+	{% if jekyll.environment == "production" %}
+		{% include analytics/ga.html %}
+	{% endif %}
+
+</body>
+</html>

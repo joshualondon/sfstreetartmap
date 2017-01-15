@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+<h1>{{ page.placeid }}</h1>
+
+<img src="{{ site.baseurl }}/places/images/{{ page.placeid }}.jpg" alt="">
+
+<ul>
+  <li>
+    <div>Latitude</div>
+    <div>{{ page.lat }}</div>
+  </li>
+  <li>
+    <div>Longitude</div>
+    <div>{{ page.long }}</div>
+  </li>
+</ul>
