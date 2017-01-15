@@ -1,0 +1,33 @@
+# ----------------------------------------
+# Site Settings
+locale              : 'en'
+title               : "San Francisco Street Art Map"
+email               : josh@joshualondon.me
+description         :
+baseurl             : "" # the subpath of your site, e.g. /blog
+url                 : "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# ----------------------------------------
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highligher: rouge
+
+# ----------------------------------------
+# Gems
+gems:
+  - jekyll-feed
+
+# ----------------------------------------
+# Include/Exclude
+exclude: ['node_modules', 'Gulpfile.js', 'package.json', 'README.md', '*.sublime-*', '.publish', '.git', 'assets', '_src/assets', '_dist/assets']
+keep_files: ['assets']
+
+
+# ----------------------------------------
+# Directory structures
+# change to source and dist for easier deploy
+source      : _src
+destination : _dist
